@@ -3,8 +3,10 @@ import "qrc:/"
 
 Item
 {
-    ///@details dapMainFontTheme ID of item with all project fonts
+    ///@details dapMainFontTheme ID of item with all project fonts.
     property alias dapMainFontTheme: dapFontsObjects
+    ///@details dapFactor Scaling factor.
+    property int dapFactor: 1
 
     //Add Font Loader
     DapFont
@@ -28,7 +30,7 @@ Item
                                                                         family: dapFonts.dapProjectFonts[0].name,
                                                                         bold: false,
                                                                         italic: false,
-                                                                        pixelSize: 14
+                                                                        pixelSize: 14 * dapFactor
                                                                     })
 
         ///@details dapFontRobotoBlackCustom Font of Roboto font family (black, without parameters)
@@ -39,7 +41,7 @@ Item
                                                                         family: dapFonts.dapProjectFonts[0].name,
                                                                         bold: false,
                                                                         italic: true,
-                                                                        pixelSize: 14
+                                                                        pixelSize: 14 * dapFactor
                                                                     })
 
         ///@details dapFontRobotoBlackItalicCustom Font of Roboto font family (black-italic, without parameters)
@@ -53,7 +55,7 @@ Item
                                                                         family: dapFonts.dapProjectFonts[3].name,
                                                                         bold: true,
                                                                         italic: false,
-                                                                        pixelSize: 14
+                                                                        pixelSize: 14 * dapFactor
                                                                     })
 
         ///@details dapFontRobotoBoldCustom Font of Roboto font family (bold, without parameters)
@@ -67,7 +69,7 @@ Item
                                                                         family: dapFonts.dapProjectFonts[3].name,
                                                                         bold: true,
                                                                         italic: true,
-                                                                        pixelSize: 14
+                                                                        pixelSize: 14 * dapFactor
                                                                     })
 
         ///@details dapFontRobotoBoldItalicCustom Font of Roboto font family (bold-italic, without parameters)
@@ -82,7 +84,7 @@ Item
                                                                         family: dapFonts.dapProjectFonts[1].name,
                                                                         bold: false,
                                                                         italic: false,
-                                                                        pixelSize: 14
+                                                                        pixelSize: 14 * dapFactor
                                                                     })
 
         ///@details dapFontRobotoLightCustom Font of Roboto font family (light, without parameters)
@@ -93,7 +95,7 @@ Item
                                                                         family: dapFonts.dapProjectFonts[1].name,
                                                                         bold: false,
                                                                         italic: true,
-                                                                        pixelSize: 14
+                                                                        pixelSize: 14 * dapFactor
                                                                     })
 
         ///@details dapFontRobotoLightItalicCustom Font of Roboto font family (light-italic, without parameters)
@@ -106,7 +108,7 @@ Item
                                                                         family: dapFonts.dapProjectFonts[2].name,
                                                                         bold: false,
                                                                         italic: false,
-                                                                        pixelSize: 14
+                                                                        pixelSize: 14 * dapFactor
                                                                     })
 
         ///@details dapFontRobotoMediumCustom Font of Roboto font family (medium, without parameters)
@@ -117,7 +119,7 @@ Item
                                                                         family: dapFonts.dapProjectFonts[2].name,
                                                                         bold: false,
                                                                         italic: true,
-                                                                        pixelSize: 14
+                                                                        pixelSize: 14 * dapFactor
                                                                     })
 
         ///@details dapFontRobotoMediumItalicCustom Font of Roboto font family (medium-italic, without parameters)
@@ -131,7 +133,7 @@ Item
                                                                         family: dapFonts.dapProjectFonts[3].name,
                                                                         bold: false,
                                                                         italic: true,
-                                                                        pixelSize: 14
+                                                                        pixelSize: 14 * dapFactor
                                                                     })
 
         ///@details dapFontRobotoItalicCustom Font of Roboto font family (italic, without parameters)
@@ -145,7 +147,7 @@ Item
                                                                         family: dapFonts.dapProjectFonts[3].name,
                                                                         bold: false,
                                                                         italic: false,
-                                                                        pixelSize: 14
+                                                                        pixelSize: 14 * dapFactor
                                                                     })
 
         ///@details dapFontRobotoRegular12 Font of Roboto font family (regular, 12pt)
@@ -153,7 +155,7 @@ Item
                                                                         family: dapFonts.dapProjectFonts[3].name,
                                                                         bold: false,
                                                                         italic: false,
-                                                                        pixelSize: 12
+                                                                        pixelSize: 12 * dapFactor
                                                                     })
 
         ///@details dapFontRobotoRegular16 Font of Roboto font family (regular, 16pt)
@@ -161,7 +163,7 @@ Item
                                                                         family: dapFonts.dapProjectFonts[3].name,
                                                                         bold: false,
                                                                         italic: false,
-                                                                        pixelSize: 16
+                                                                        pixelSize: 16 * dapFactor
                                                                     })
 
         ///@details dapFontRobotoRegular18 Font of Roboto font family (regular, 18pt)
@@ -169,7 +171,7 @@ Item
                                                                         family: dapFonts.dapProjectFonts[3].name,
                                                                         bold: false,
                                                                         italic: false,
-                                                                        pixelSize: 18
+                                                                        pixelSize: 18 * dapFactor
                                                                     })
 
         ///@details dapFontRobotoRegularCustom Font of Roboto font family (regular, without parameters)
@@ -180,7 +182,7 @@ Item
                                                                         family: dapFonts.dapProjectFonts[4].name,
                                                                         bold: false,
                                                                         italic: false,
-                                                                        pixelSize: 14
+                                                                        pixelSize: 14 * dapFactor
                                                                     })
 
         ///@details dapFontRobotoThinCustom Font of Roboto font family (thin, without parameters)
@@ -191,7 +193,7 @@ Item
                                                                         family: dapFonts.dapProjectFonts[4].name,
                                                                         bold: false,
                                                                         italic: true,
-                                                                        pixelSize: 14
+                                                                        pixelSize: 14 * dapFactor
                                                                     })
 
         ///@details dapFontRobotoThinItalicCustom Font of Roboto font family (thin-italic, without parameters)
@@ -205,7 +207,7 @@ Item
                                                                         family: dapFonts.dapProjectFonts[3].name,
                                                                         bold: false,
                                                                         italic: false,
-                                                                        pixelSize: 11
+                                                                        pixelSize: 11 * dapFactor
                                                                     })
 
         ///@details dapFontRobotoRegular10 Font of Roboto font family (regular, 10pt)
@@ -213,7 +215,7 @@ Item
                                                                         family: dapFonts.dapProjectFonts[3].name,
                                                                         bold: false,
                                                                         italic: false,
-                                                                        pixelSize: 10
+                                                                        pixelSize: 10 * dapFactor
                                                                     })
     }
 }

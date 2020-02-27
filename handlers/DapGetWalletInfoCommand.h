@@ -1,15 +1,18 @@
-#ifndef DAPGETLISTWALLETSCOMMAND_H
-#define DAPGETLISTWALLETSCOMMAND_H
+#ifndef DAPGETWALLETINFOCOMMAND_H
+#define DAPGETWALLETINFOCOMMAND_H
 
 #include <QProcess>
 #include <QRegExp>
 #include <QRegularExpression>
 #include <QByteArray>
+#include <QDataStream>
+#include <QBuffer>
+#include <QTextCodec>
 
 #include "DapWallet.h"
 #include "DapAbstractCommand.h"
 
-class DapGetListWalletsCommand : public DapAbstractCommand
+class DapGetWalletInfoCommand : public DapAbstractCommand
 {
 public:
     /// Overloaded constructor.
@@ -17,8 +20,7 @@ public:
     /// @param parent Parent.
     /// @details The parent must be either DapRPCSocket or DapRPCLocalServer.
     /// @param asCliPath The path to cli nodes.
-    DapGetListWalletsCommand(const QString &asServicename, QObject *parent = nullptr, const QString &asCliPath = QString());
-
+    DapGetWalletInfoCommand(const QString &asServicename, QObject *parent = nullptr, const QString &asCliPath = QString());
 public slots:
     /// Send a response to the client.
     /// @details Performed on the service side.
@@ -29,6 +31,7 @@ public slots:
                              const QVariant &arg5 = QVariant(), const QVariant &arg6 = QVariant(),
                              const QVariant &arg7 = QVariant(), const QVariant &arg8 = QVariant(),
                              const QVariant &arg9 = QVariant(), const QVariant &arg10 = QVariant()) override;
+    QVariant replyFromService() override;
 };
 
-#endif // DAPGETLISTWALLETSCOMMAND_H
+#endif // DAPGETWALLETINFOCOMMAND_H
