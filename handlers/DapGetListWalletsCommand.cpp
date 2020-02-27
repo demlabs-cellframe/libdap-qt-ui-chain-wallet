@@ -113,9 +113,9 @@ QVariant DapGetListWalletsCommand::respondToClient(const QVariant &arg1, const Q
     QProcess process;
     process.start(QString("%1 wallet list").arg(m_sCliPath));
     process.waitForFinished(-1);
-    QString res = QString::fromLatin1(process.readAll());
+    QString resources = QString::fromLatin1(process.readAll());
     QRegularExpression rx("wallet:\\s(.+)\\s", QRegularExpression::MultilineOption);
-    QRegularExpressionMatchIterator itr = rx.globalMatch(res);
+    QRegularExpressionMatchIterator itr = rx.globalMatch(resources);
     while (itr.hasNext())
     {
         QRegularExpressionMatch match = itr.next();
@@ -179,7 +179,6 @@ QVariant DapGetListWalletsCommand::respondToClient(const QVariant &arg1, const Q
 /// @return Service reply.
 QVariant DapGetListWalletsCommand::replyFromService()
 {
-    QObject * s = sender();
     DapRpcServiceReply *reply = static_cast<DapRpcServiceReply *>(sender());
 
     emit serviceResponded(reply->response().toJsonValue().toVariant().toByteArray());
