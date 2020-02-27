@@ -30,8 +30,8 @@ QVariant DapAddWalletCommand::respondToClient(const QVariant &arg1, const QVaria
     QJsonArray result;
     process.start(QString("%1 wallet new -w %2 -sign %3 -net %4 -restore %5").arg(CLI_PATH).arg(arg1.toString()).arg(arg2.toString()).arg(arg3.toString()).arg(arg4.toString()));
     process.waitForFinished(-1);
-    QString res = QString::fromLatin1(process.readAll());
-    if(res.contains("already exists"))
+    QString resources = QString::fromLatin1(process.readAll());
+    if(resources.contains("already exists"))
     {
         result.append(QJsonValue(false));
         result.append(QJsonValue("Wallet already exists"));
