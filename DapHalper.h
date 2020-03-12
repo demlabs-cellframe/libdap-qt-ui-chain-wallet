@@ -1,6 +1,6 @@
 /****************************************************************************
 **
-** This file is part of the libCellFrameDashboardClient library.
+** This file is part of the libdap-qt-ui-chain-wallet library.
 ** 
 ** The class provides common functionality.
 **
