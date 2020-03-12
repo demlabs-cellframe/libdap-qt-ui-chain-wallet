@@ -14,5 +14,6 @@
         <file>resources/fonts/roboto_regular.ttf</file>
         <file>resources/fonts/roboto_thin_italic.ttf</file>
         <file>resources/fonts/roboto_thin.ttf</file>
+        <file>resources/JS/TimeFunctions.js</file>
     </qresource>
 </RCC>
