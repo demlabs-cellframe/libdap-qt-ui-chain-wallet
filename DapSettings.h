@@ -1,6 +1,6 @@
 /****************************************************************************
 **
-** This file is part of the CellFrameDashboardGUI application.
+** This file is part of the libdap-qt-ui-chain-wallet application.
 ** 
 ** The class provides an interface for managing application settings. 
 ** Record format - Json.
