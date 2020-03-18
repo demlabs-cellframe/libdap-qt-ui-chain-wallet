@@ -47,7 +47,7 @@ QVariant DapGetWalletsInfoCommand::respondToClient(const QVariant &arg1, const Q
     QProcess process;
     process.start(QString("%1 wallet list").arg(m_sCliPath));
     process.waitForFinished(-1);
-    QString res = QString::fromLatin1(process.readAll());
+    QString res = QString::fromLocal8Bit(process.readAll());
     QRegularExpression rx("wallet:\\s(.+)\\s", QRegularExpression::MultilineOption);
     QRegularExpressionMatchIterator itr = rx.globalMatch(res);
     while (itr.hasNext())
