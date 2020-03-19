@@ -174,6 +174,22 @@ Item
                                                                         pixelSize: 18 * dapFactor
                                                                     })
 
+        ///@details dapFontRobotoRegular22 Font of Roboto font family (regular, 22pt)
+        property font dapFontRobotoRegular22:               Qt.font({
+                                                                        family: dapFonts.dapProjectFonts[3].name,
+                                                                        bold: false,
+                                                                        italic: false,
+                                                                        pixelSize: 18 * dapFactor
+                                                                    })
+
+        ///@details dapFontRobotoRegular28 Font of Roboto font family (regular, 28pt)
+        property font dapFontRobotoRegular28:               Qt.font({
+                                                                        family: dapFonts.dapProjectFonts[3].name,
+                                                                        bold: false,
+                                                                        italic: false,
+                                                                        pixelSize: 18 * dapFactor
+                                                                    })
+
         ///@details dapFontRobotoRegularCustom Font of Roboto font family (regular, without parameters)
         property font dapFontRobotoRegularCustom:           Qt.font({ family: dapFonts.dapProjectFonts[3].name })
 
