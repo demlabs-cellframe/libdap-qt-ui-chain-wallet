@@ -13,7 +13,7 @@ DISTFILES +=
 
 HEADERS += \
     $$PWD/DapChainConvertor.h \
-    $$PWD/DapHalper.h \
+    $$PWD/DapHelper.h \
     $$PWD/DapHistoryType.h \
     $$PWD/DapLogMessage.h \
     $$PWD/DapNodeType.h \
@@ -49,7 +49,7 @@ HEADERS += \
 
 SOURCES += \
     $$PWD/DapChainConvertor.cpp \
-    $$PWD/DapHalper.cpp \
+    $$PWD/DapHelper.cpp \
     $$PWD/DapHistoryType.cpp \
     $$PWD/DapLogMessage.cpp \
     $$PWD/DapSettings.cpp \

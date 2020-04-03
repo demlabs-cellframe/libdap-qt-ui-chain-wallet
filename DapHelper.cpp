@@ -1,13 +1,13 @@
-#include "DapHalper.h"
+#include "DapHelper.h"
 
-DapHalper::DapHalper(QObject *parent) : QObject(parent)
+DapHelper::DapHelper(QObject *parent) : QObject(parent)
 {
     
 }
 
-DapHalper &DapHalper::getInstance()
+DapHelper &DapHelper::getInstance()
 {
-    static DapHalper instance;
+    static DapHelper instance;
     return instance;
 }
 
@@ -16,7 +16,7 @@ DapHalper &DapHalper::getInstance()
 /// @param memmoryApp Shared memory.
 /// @param memmoryAppBagFix Shared memory for Linux system features.
 /// @return If the application is running, it returns three, otherwise false.
-bool DapHalper::checkExistenceRunningInstanceApp(QSystemSemaphore& systemSemaphore, QSharedMemory &memmoryApp, QSharedMemory &memmoryAppBagFix)
+bool DapHelper::checkExistenceRunningInstanceApp(QSystemSemaphore& systemSemaphore, QSharedMemory &memmoryApp, QSharedMemory &memmoryAppBagFix)
 {
     systemSemaphore.acquire();
     
